@@ -9,7 +9,21 @@ Before submittting the form Please make sure to change the SPO.php file
 
 Update your email and Password with SharePoint List WSDL file (If you are using SharePoint Online then leave the SPONLINE)
 
-$sp = new SharePointAPI('Your email', 'Your password', './Lists.asmx','SPONLINE');
+$sp = new SharePointAPI('YourEmail', 'YourPassword', './Lists.asmx','SPONLINE');
+
+OR 
+
+
+
+You can also use the direct URL of the SharePoint List WSDL. for that you Just need to Put this code with your URL
+
+
+
+$sp = new SharePointAPI('YourEmail', 'YourPassword', 
+
+'https://YourDomainName.sharepoint.com/sites/YourSiteName/_vti_bin/Lists.asmx?wsdl','SPONLINE');
+
+
 
 Now Replace the List Name with your SharePoint List( Wordpress) Name and their columns from below line
 
